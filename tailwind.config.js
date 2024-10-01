@@ -6,7 +6,9 @@ export default {
   theme: {
     colors:{
       'pale-yellow':"#FEFAEE",
-      'neon-yellow':"#FEED5A",
+      'pale-grey':'#F1F0E6',
+      'neon-yellow':"#FEF14B",
+      'dark-neon-yellow':'#FFE650',
       'bright-yellow':"#FEF1BB",
       'black':'#000',
       'white':'#fff',
