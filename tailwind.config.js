@@ -7,6 +7,7 @@ export default {
     colors:{
       'pale-yellow':"#FEFAEE",
       'pale-grey':'#F1F0E6',
+      'grey':'#ADADAD',
       'neon-yellow':"#FEF14B",
       'dark-neon-yellow':'#FFE650',
       'bright-yellow':"#FEF1BB",
