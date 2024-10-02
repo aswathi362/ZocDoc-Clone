@@ -10,7 +10,7 @@ function DoctorConnect() {
     <div className='bg-bright-yellow pt-10 pb-16'>
         <div className='container mx-auto text-center mt-10'>
             <h1 className='text-2xl'>Let’s get you a doc who gets you</h1>
-            <div className='grid grid-cols-3 mt-36 gap-12 px-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 mt-36 gap-12 px-10'>
                 <DoctorCard image={doc1} text={"Browse providers who take your insurance"} buttonText={"See specialities"}/>
                 <DoctorCard image={doc2} text={"Read reviews from users"} buttonText={"See providers"}/>
                 <DoctorCard image={doc3} text={"Book an appointment today, online"} buttonText={"See availablity"}/>
