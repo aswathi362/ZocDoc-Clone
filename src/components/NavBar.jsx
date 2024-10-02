@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from '../assets/logo.png'
-import NavbarButton from "./NavbarButton";
-import YellowButton from "./YellowButton";
-import WhiteButton from "./WhiteButton";
+import NavbarButton from "./Buttons/NavbarButton";
+import YellowButton from "./Buttons/YellowButton";
+import WhiteButton from "./Buttons/WhiteButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
