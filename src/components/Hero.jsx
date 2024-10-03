@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import YellowButton from './Buttons/YellowButton'
-import insuarance from '../assets/insuarance.png'
 import SpecialitySearchBar from './SpecialitySearchBar';
 import InsuranceSearchBar from './InsuranceSearchBar';
+import heroImg from '../assets/heroImg.png'
+import heroLines from '../assets/heroLines.png'
 
 function Hero() {
     const words = ['doctors', 'dentists', 'OB-GYNs','dermatologists'];
@@ -16,8 +17,10 @@ function Hero() {
         return () => clearInterval(interval);
     }, []);
   return (
-    <div className='container py-16 px-12 mx-auto'>
+    <div className='container py-16 px-12 mx-auto relative'>
         <p className='hidden lg:block text-5xl font-light leading-tight'>Book local <span className='swipe-text'>{words[currentWordIndex]}</span><br/>who take you insurance</p>
+        <img src={heroImg} className='absolute w-[41%] -right-9 -top-16'/>
+        <img src={heroLines} className='absolute w-10 right-5'/>
         <div className='mx-auto border-2 border-black rounded-md bg-white lg:mt-10 lg:ps-7 flex flex-col items-center lg:flex-row w-full'>
             <SpecialitySearchBar/>
             <div className='border-l lg:h-10 border-pale-grey lg:px-2'></div>
