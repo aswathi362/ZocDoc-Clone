@@ -1,0 +1,36 @@
+{
+    "Medical": [
+      "Nexplanon removal",
+      "OB-GYN emergency",
+      "IUD removal",
+      "IUD insertion",
+      "Annual physical",
+      "Pre-surgery checkup/Pre-surgical clearance",
+      "COVID-19 testing",
+      "Medical clearance",
+      "Online doctors",
+      "General physicians",
+      "Gastroenterology emergency",
+      "ENT emergency visit",
+      "Hair loss",
+      "Removal of cyst",
+      "Online dermatologists",
+      "Ozempic / Wegovy (Semaglutide) Weight Loss Drug Consultation"
+    ],
+    "Dental": [
+      "Dental",
+      "Dental cleaning",
+      "Teeth bonding",
+      "Dental implants"
+    ],
+    "Mental Health": [
+      "Anxiety",
+      "Hyperactive disorder (ADD/ADHD)",
+      "Online therapy"
+    ],
+    "Vision": [
+      "Annual eye exam",
+      "Eye exam"
+    ]
+  }
+  

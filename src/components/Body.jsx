@@ -5,6 +5,9 @@ import DoctorConnect from './DoctorConnect'
 import ZocdocApp from './ZocdocApp'
 import PrivatePractice from './PrivatePractice'
 import HealthSystems from './HealthSystems'
+import CityList from './CityList'
+import Jobs from './Jobs'
+import VisitReasons from './VisitReasons'
 
 function Body() {
   return (
@@ -15,6 +18,9 @@ function Body() {
         <ZocdocApp/>
         <PrivatePractice/>
         <HealthSystems/>
+        <CityList/>
+        <Jobs/>
+        <VisitReasons/>
     </div>
   )
 }
