@@ -9,7 +9,7 @@ import methodistLogo from '../assets/healthSystems/methodistLogo.svg'
 
 function HealthSystems() {
   return (
-    <div className='container mx-auto px-7 pb-16'>
+    <div className='container mx-auto lg:px-7 pb-16'>
         <div className='bg-light-grey grid grid-cols-1 lg:grid-cols-2 p-10'>
             <div className='mx-10 my-auto flex flex-col justify-start items-start'>
                 <p className='text-lg my-3'>Zocdoc for health systems</p>
