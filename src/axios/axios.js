@@ -15,4 +15,8 @@ export const getDoctorCities = () => {
   return axiosInstance.get('doctorCities');
 };
 
+export const getSpecialitySuggestions = () => {
+  return axiosInstance.get('specialitySuggestions');
+};
+
 export default axiosInstance;

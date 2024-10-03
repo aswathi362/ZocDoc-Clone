@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import YellowButton from './Buttons/YellowButton'
 import insuarance from '../assets/insuarance.png'
+import SpecialitySearchBar from './SpecialitySearchBar';
 
 function Hero() {
     const words = ['doctors', 'dentists', 'OB-GYNs','dermatologists'];
@@ -17,10 +18,7 @@ function Hero() {
     <div className='container py-16 px-12 mx-auto'>
         <p className='hidden lg:block text-5xl font-light leading-tight'>Book local <span className='swipe-text'>{words[currentWordIndex]}</span><br/>who take you insurance</p>
         <div className='mx-auto border-2 border-black rounded-md bg-white lg:mt-10 lg:ps-7 flex flex-col items-center lg:flex-row w-full'>
-            <div className='p-3 grow flex items-center w-full lg:w-auto'>
-                <i className='bi bi-search bold-icon'></i>
-                <input className='p-2 grow rounded-md focus:outline-none' placeholder='Condition, Procedure, Doctor ...'/>
-            </div>
+            <SpecialitySearchBar/>
             <div className='border-l lg:h-10 border-pale-grey lg:px-2'></div>
             <div className='p-3 flex grow items-center w-full lg:w-auto'>
                 <i className='bi bi-geo-alt-fill'></i>

@@ -317,8 +317,7 @@
       ]
     },
     "specialitySuggestions":{
-        "Popular Suggestions": [
-            "Popular specialties",
+        "Popular Specialities": [
             "Primary Care Physician (PCP)",
             "OB-GYN (Obstetrician-Gynecologist)",
             "Dermatologist",
@@ -328,7 +327,7 @@
             "Psychiatrist",
             "Orthopedic Surgeon (Orthopedist)"
         ],
-        "More suggestions(a-z)": [
+        "More specialities (a-z)": [
             "Acupuncturist",
             "Allergist (Immunologist)",
             "Audiologist",

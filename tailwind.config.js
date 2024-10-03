@@ -16,6 +16,7 @@ export default {
       'black':'#000',
       'white':'#fff',
       'white-gray':"#F9F8F7",
+      'light-rose':'#FFE4E9'
     },
     extend: {},    
   },
