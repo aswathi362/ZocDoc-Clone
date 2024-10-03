@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import YellowButton from './Buttons/YellowButton'
 import insuarance from '../assets/insuarance.png'
 import SpecialitySearchBar from './SpecialitySearchBar';
+import InsuranceSearchBar from './InsuranceSearchBar';
 
 function Hero() {
     const words = ['doctors', 'dentists', 'OB-GYNs','dermatologists'];
@@ -25,10 +26,7 @@ function Hero() {
                 <input className='p-2 rounded-md grow focus:outline-none' value="Kanchipuram, TN"/>
             </div>
             <div className='border-l lg:h-10 border-pale-grey lg:px-2'></div>
-            <div className='p-3 flex grow items-center w-full lg:w-auto'>
-                <img src={insuarance} className='w-[20px]'/>
-                <input className='p-2 rounded-md grow focus:outline-none' placeholder='Carrier insuarance and plan'/>
-            </div>
+            <InsuranceSearchBar/>
             <div className='bg-neon-yellow p-3 hidden lg:block'>
                 <YellowButton text={<i className="bi bi-search bold-icon" style={{height:"100%", width:"100%"}}></i>} />
             </div>

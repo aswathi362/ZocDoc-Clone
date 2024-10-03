@@ -19,4 +19,8 @@ export const getSpecialitySuggestions = () => {
   return axiosInstance.get('specialitySuggestions');
 };
 
+export const getInsuranceSuggestions = () => {
+  return axiosInstance.get('insuranceSuggestions');
+};
+
 export default axiosInstance;
