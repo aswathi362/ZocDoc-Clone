@@ -37,7 +37,7 @@ function InsuranceSearchBar() {
     };
   return (
     <div className='p-3 flex grow items-center w-full lg:w-auto relative'>
-        <img src={insuarance} className='w-[20px]'/>
+        <img src={insuarance} className='w-[20px]' alt='insurance card icon'/>
         <input 
             className='p-2 rounded-md grow focus:outline-none' 
             placeholder='Carrier insuarance and plan'
