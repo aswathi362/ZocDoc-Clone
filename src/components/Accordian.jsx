@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ title, items }) => {
+const Accordion = ({ title, items, titleFontSize }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -13,7 +13,7 @@ const Accordion = ({ title, items }) => {
         onClick={toggleAccordion}
         className="w-full flex justify-between items-center p-4 focus:outline-none"
       >
-        <span className="text-lg">{title}</span>
+        <span className={titleFontSize}>{title}</span>
         {isOpen ? (
           <i className="bi bi-chevron-up"></i>
         ) : (

@@ -23,4 +23,8 @@ export const getInsuranceSuggestions = () => {
   return axiosInstance.get('insuranceSuggestions');
 };
 
+export const getBrowseSpecialities = () => {
+  return axiosInstance.get('browseSpecialities');
+};
+
 export default axiosInstance;
