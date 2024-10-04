@@ -5,11 +5,13 @@ import YellowButton from "./Buttons/YellowButton";
 import WhiteButton from "./Buttons/WhiteButton";
 import Modal from './Modal';
 import BrowseModalContent from './BrowseModalContent';
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleLogin = () => {
     setIsLoginDropdownOpen(!isLoginDropdownOpen);
@@ -26,6 +28,10 @@ const Navbar = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const handleSignUp = () => {
+    navigate('/sign-up');
+  }
 
   return (
     <>
@@ -50,7 +56,7 @@ const Navbar = () => {
               <NavbarButton text={"List your practice on Zocdoc"} isDropdown={false} onClick={"#"} />
               <div className="border-l border-pale-grey h-7 border-2 my-2"></div>
               <NavbarButton text={"Log in"} onClick={toggleLogin} isDropdown={true} />
-              <YellowButton text={"Sign up"} isDropdown={false} onClick={"#"} />
+              <YellowButton text={"Sign up"} isDropdown={false} onClick={handleSignUp} />
             </div>
           </div>
         </div>
@@ -61,7 +67,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col space-y-4 justify-center mx-10 my-9">
             <div className="w-2/3 mx-auto"><h1 className="my-3 text-2xl">Welcome to Zocdoc</h1></div>
-            <div className="w-2/3 text-center mx-auto"><YellowButton text={"Sign up"} /></div>
+            <div className="w-2/3 text-center mx-auto"><YellowButton text={"Sign up"} onClick={handleSignUp}/></div>
             <div className="w-2/3 text-center mx-auto"><WhiteButton text={"Log in"} /></div>
             <div className="text-center pt-6 font-light">Interested in <span className="font-medium underline">listing your practice?</span></div>
           </div>

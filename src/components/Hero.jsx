@@ -18,8 +18,8 @@ function Hero() {
     }, []);
   return (
     <div className='container py-16 px-12 mx-auto relative'>
-        <p className='hidden lg:block text-5xl font-light leading-tight'>Book local <span className='swipe-text'>{words[currentWordIndex]}</span><br/>who take you insurance</p>
-        <img src={heroImg} className='absolute w-[41%] -right-9 -top-16 hidden lg:block' alt='insurnace card image'/>
+        <p className='text-xl lg:text-5xl lg:mb-5 font-light leading-tight'>Book local <span className='swipe-text'>{words[currentWordIndex]}</span><br/>who take you insurance</p>
+        <img src={heroImg} className='absolute w-[41%] -right-9 -top-20 hidden lg:block' alt='insurnace card image'/>
         <img src={heroLines} className='absolute w-10 right-5 hidden lg:block' alt='exclamation'/>
         <div className='mx-auto border-2 border-black rounded-md bg-white lg:mt-10 lg:ps-7 flex flex-col items-center lg:flex-row w-full'>
             <SpecialitySearchBar/>
