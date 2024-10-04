@@ -10,7 +10,7 @@ function YellowButton({ text, isDropdown, onClick }) {
 
   return (
     <div
-      className={`text-md rounded px-6 py-3 bg-neon-yellow hover:bg-dark-neon-yellow text-black`}
+      className={`z-20 text-md rounded px-6 py-3 bg-neon-yellow hover:bg-dark-neon-yellow text-black`}
       onClick={onClick}
     >
       {renderText()}

@@ -9,6 +9,11 @@ import BrowseModalContent from './BrowseModalContent';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
+
+  const toggleLogin = () => {
+    setIsLoginDropdownOpen(!isLoginDropdownOpen);
+  };
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -44,7 +49,7 @@ const Navbar = () => {
               <NavbarButton text={"Help"} isDropdown={false} onClick={"#"} />
               <NavbarButton text={"List your practice on Zocdoc"} isDropdown={false} onClick={"#"} />
               <div className="border-l border-pale-grey h-7 border-2 my-2"></div>
-              <NavbarButton text={"Log in"} isDropdown={true} onClick={"#"} />
+              <NavbarButton text={"Log in"} onClick={toggleLogin} isDropdown={true} />
               <YellowButton text={"Sign up"} isDropdown={false} onClick={"#"} />
             </div>
           </div>
@@ -61,6 +66,18 @@ const Navbar = () => {
             <div className="text-center pt-6 font-light">Interested in <span className="font-medium underline">listing your practice?</span></div>
           </div>
         </div>
+
+        {isLoginDropdownOpen && (
+          <div className="absolute top-16 right-52 mt-2 w-1/5 bg-white rounded-md shadow-xl z-50 px-5">
+            <div className="py-2">
+              <h1 className="text-black font-black py-2">Patients</h1>
+              <a><p className="text-grey font-light py-2">Log in</p></a>
+              <div className="border-b border-grey border-1 my-3"></div>
+              <h1 className="text-black font-black py-2">Doctors</h1>
+              <a><p className="text-grey font-light py-2">Log in</p></a>
+            </div>
+          </div>
+        )}
       </nav>
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
