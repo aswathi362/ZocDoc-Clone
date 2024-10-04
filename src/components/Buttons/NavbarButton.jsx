@@ -3,7 +3,7 @@ import React from 'react';
 function NavbarButton({ text, isDropdown, onClick }) {
   return (
     <div
-      className={`text-md rounded px-6 py-3 hover:bg-pale-grey`}
+      className={`text-md rounded px-6 py-3 hover:bg-pale-grey z-20`}
       onClick={onClick}
     >
       {text}
