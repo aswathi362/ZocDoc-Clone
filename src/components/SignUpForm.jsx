@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import YellowButton from '../components/Buttons/YellowButton'
+import WhiteButton from '../components/Buttons/WhiteButton'
 import Tooltip from './Tooltip';
+import google from '../assets/google.png'
+import apple from '../assets/apple.png'
+import { toast, ToastContainer } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 function SignUpForm() {
     const [showTooltipFirstName, setShowTooltipFirstName] = useState(false);
@@ -13,6 +18,8 @@ function SignUpForm() {
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [sex, setSex] = useState('');
     const [errors, setErrors] = useState({});
+
+    const navigate = useNavigate();
 
     const validateForm = () => {
         const newErrors = {};
@@ -45,7 +52,10 @@ function SignUpForm() {
       const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-          alert('Form submitted successfully!');
+            toast.success("Signed up successfully!",{
+                position: "top-right",
+                onClose:() => navigate('/')
+            })
         }
       };
   return (
@@ -116,7 +126,31 @@ function SignUpForm() {
             <div className='text-center my-5'>
                 <YellowButton text="Sign Up" onClick={handleSubmit}/>
             </div>
+
+            <div className='flex items-center justify-between my-5'>
+                <hr className='text-grey w-[45%]'/><p>or</p><hr className='text-grey w-[45%]'/>
+            </div>
+            
+            <div className='my-5 text-center'>
+                <WhiteButton text={
+                    <div className="flex items-center space-x-2">
+                    <img src={google} alt="icon" className="w-5 h-5 float-start" />
+                    <span className="flex-1 text-center">Continue with Google</span>
+                    </div>
+                }/>
+                <br/>
+                <WhiteButton text={
+                    <div className="flex items-center space-x-2">
+                    <img src={apple} alt="icon" className="w-5 h-5 float-start" />
+                    <span className="flex-1 text-center">Continue with Apple</span>
+                    </div>
+                }/>
+            </div>
+            <div className='my-5 text-center'>
+                <p className='text-grey'>Already have an account? <span className='text-black underline'>Log in</span></p>
+            </div>
         </div>
+        <ToastContainer/>
     </div>
   )
 }
