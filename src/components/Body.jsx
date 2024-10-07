@@ -1,13 +1,13 @@
 import React from 'react'
-import Insuarance from './Insuarance'
-import Specialities from './Specialities'
-import DoctorConnect from './DoctorConnect'
-import ZocdocApp from './ZocdocApp'
-import PrivatePractice from './PrivatePractice'
-import HealthSystems from './HealthSystems'
-import CityList from './CityList'
-import Jobs from './Jobs'
-import VisitReasons from './VisitReasons'
+import Insuarance from './Insuarance/Insuarance'
+import Specialities from './Specialities/Specialities'
+import DoctorConnect from './ConnectWithDoctor/DoctorConnect'
+import ZocdocApp from './MobileApp/ZocdocApp'
+import PrivatePractice from './ListYourPractice/PrivatePractice'
+import HealthSystems from './HealthSystem/HealthSystems'
+import CityList from './DoctorsByCity/CityList'
+import Jobs from './JobOppurtunities/Jobs'
+import VisitReasons from './VisitReasons/VisitReasons'
 
 function Body() {
   return (

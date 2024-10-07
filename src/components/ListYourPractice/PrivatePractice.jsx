@@ -1,6 +1,6 @@
 import React from 'react'
-import doctor from '../assets/doctor.jpg'
-import YellowButton from './Buttons/YellowButton'
+import doctor from '../../assets/doctor.jpg'
+import YellowButton from '../ReusableComponents/Buttons/YellowButton'
 
 function PrivatePractice() {
   return (

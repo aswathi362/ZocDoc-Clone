@@ -1,9 +1,9 @@
 import React from 'react'
-import zocdocApp from '../assets/zocdocApp.png'
-import qrCode from '../assets/qrCode.png'
-import playStore from '../assets/playStore.png'
-import appStore from '../assets/appStore.png'
-import zocdocAppArrow from '../assets/zocdocAppArrow.svg'
+import zocdocApp from '../../assets/zocdocApp.png'
+import qrCode from '../../assets/qrCode.png'
+import playStore from '../../assets/playStore.png'
+import appStore from '../../assets/appStore.png'
+import zocdocAppArrow from '../../assets/zocdocAppArrow.svg'
 
 function ZocdocApp() {
   return (

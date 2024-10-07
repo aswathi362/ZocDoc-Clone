@@ -1,6 +1,6 @@
 import React from 'react'
-import YellowButton from './Buttons/YellowButton'
-import jobs from '../assets/jobs.png'
+import YellowButton from '../ReusableComponents/Buttons/YellowButton'
+import jobs from '../../assets/jobs.png'
 
 function Jobs() {
   return (

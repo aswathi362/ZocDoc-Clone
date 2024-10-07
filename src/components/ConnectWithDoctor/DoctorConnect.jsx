@@ -1,8 +1,8 @@
 import React from 'react'
 import DoctorCard from './DoctorCard'
-import doc1 from '../assets/doctor/doc1.svg'
-import doc2 from '../assets/doctor/doc2.svg'
-import doc3 from '../assets/doctor/doc3.svg'
+import doc1 from '../../assets/doctor/doc1.svg'
+import doc2 from '../../assets/doctor/doc2.svg'
+import doc3 from '../../assets/doctor/doc3.svg'
 
 
 function DoctorConnect() {

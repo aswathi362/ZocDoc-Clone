@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './NavBar'
-import Hero from './Hero'
+import Hero from './Hero/Hero'
+import Navbar from './NavBar/NavBar'
 
 function Header() {
   return (

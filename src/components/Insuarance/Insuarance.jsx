@@ -1,11 +1,11 @@
 import React from 'react'
-import aetna from '../assets/insuarance/aetna.png'
-import BlueCross from '../assets/insuarance/BlueCross.png'
-import Cigna from '../assets/insuarance/Cigna.png'
-import Medicare from '../assets/insuarance/Medicare.png'
-import United from '../assets/insuarance/United.png'
+import aetna from '../../assets/insuarance/aetna.png'
+import BlueCross from '../../assets/insuarance/BlueCross.png'
+import Cigna from '../../assets/insuarance/Cigna.png'
+import Medicare from '../../assets/insuarance/Medicare.png'
+import United from '../../assets/insuarance/United.png'
 import InsuaranceCard from './InsuaranceCard'
-import WhiteButton from './Buttons/WhiteButton'
+import WhiteButton from '../ReusableComponents/Buttons/WhiteButton'
 
 function Insuarance() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import YellowButton from '../components/Buttons/YellowButton'
-import WhiteButton from '../components/Buttons/WhiteButton'
-import Tooltip from './Tooltip';
-import google from '../assets/google.png'
-import apple from '../assets/apple.png'
+import YellowButton from '../ReusableComponents/Buttons/YellowButton'
+import WhiteButton from '../ReusableComponents/Buttons/WhiteButton'
+import Tooltip from '../ReusableComponents/Tooltip';
+import google from '../../assets/google.png'
+import apple from '../../assets/apple.png'
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 

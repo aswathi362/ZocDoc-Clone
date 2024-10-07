@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CityColumn from './CityColumn';
-import { getDoctorCities } from '../axios/axios';
+import { getDoctorCities } from '../../axios/axios';
 
 function CityList() {
     const [doctorCities, setDoctorCities] = useState([]);

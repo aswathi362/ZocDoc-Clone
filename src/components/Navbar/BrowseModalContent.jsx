@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getBrowseSpecialities } from '../axios/axios';
-import Accordion from './Accordian';
+import { getBrowseSpecialities } from '../../axios/axios';
+import Accordion from '../ReusableComponents/Accordian';
 
 function BrowseModalContent() {
   const [hoveredText, setHoveredText] = useState("Specialities");

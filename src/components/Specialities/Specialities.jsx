@@ -1,10 +1,10 @@
 import React from 'react'
-import primaryCare from '../assets/specialities/primaryCare.png'
-import dentist from '../assets/specialities/dentist.png'
-import obgyn from '../assets/specialities/obgyn.png'
-import derm from '../assets/specialities/derm.png'
-import psych from '../assets/specialities/psych.png'
-import eye from '../assets/specialities/eye.png'
+import primaryCare from '../../assets/specialities/primaryCare.png'
+import dentist from '../../assets/specialities/dentist.png'
+import obgyn from '../../assets/specialities/obgyn.png'
+import derm from '../../assets/specialities/derm.png'
+import psych from '../../assets/specialities/psych.png'
+import eye from '../../assets/specialities/eye.png'
 import SpecialityCard from './SpecialityCard'
 
 function Specialities() {

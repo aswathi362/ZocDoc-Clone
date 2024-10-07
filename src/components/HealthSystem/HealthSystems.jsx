@@ -1,11 +1,11 @@
 import React from 'react'
-import YellowButton from './Buttons/YellowButton'
-import medstarLogo from '../assets/healthSystems/medstarLogo.svg'
-import mountsinaiLogo from '../assets/healthSystems/mountsinaiLogo.svg'
-import tuftsLogo from '../assets/healthSystems/tuftsLogo.svg'
-import montefioreLogo from '../assets/healthSystems/montefioreLogo.svg'
-import intermountHealthLogo from '../assets/healthSystems/intermountHealthLogo.svg'
-import methodistLogo from '../assets/healthSystems/methodistLogo.svg'
+import YellowButton from '../ReusableComponents/Buttons/YellowButton'
+import medstarLogo from '../../assets/healthSystems/medstarLogo.svg'
+import mountsinaiLogo from '../../assets/healthSystems/mountsinaiLogo.svg'
+import tuftsLogo from '../../assets/healthSystems/tuftsLogo.svg'
+import montefioreLogo from '../../assets/healthSystems/montefioreLogo.svg'
+import intermountHealthLogo from '../../assets/healthSystems/intermountHealthLogo.svg'
+import methodistLogo from '../../assets/healthSystems/methodistLogo.svg'
 
 function HealthSystems() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import logo from '../assets/logo.png';
-import NavbarButton from "./Buttons/NavbarButton";
-import YellowButton from "./Buttons/YellowButton";
-import WhiteButton from "./Buttons/WhiteButton";
-import Modal from './Modal';
+import logo from '../../assets/logo.png';
+import NavbarButton from "../ReusableComponents/Buttons/NavbarButton";
+import YellowButton from "../ReusableComponents/Buttons/YellowButton";
+import WhiteButton from "../ReusableComponents/Buttons/WhiteButton";
+import Modal from '../ReusableComponents/Modal';
 import BrowseModalContent from './BrowseModalContent';
 import { useNavigate } from "react-router-dom";
 

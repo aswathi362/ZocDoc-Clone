@@ -1,5 +1,5 @@
 import React from 'react'
-import WhiteButton from './Buttons/WhiteButton'
+import WhiteButton from '../ReusableComponents/Buttons/WhiteButton'
 
 function DoctorCard({ image, text, buttonText }) {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Accordion from './Accordian'
-import { getVisitReasons } from '../axios/axios';
+import Accordion from '../ReusableComponents/Accordian'
+import { getVisitReasons } from '../../axios/axios';
 
 function VisitReasons() {
     const [visitReasons, setVisitReasons] = useState([]);

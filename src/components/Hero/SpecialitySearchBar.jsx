@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import insuarance from '../assets/insuarance.png'
-import { getInsuranceSuggestions } from '../axios/axios';
+import { getSpecialitySuggestions } from '../../axios/axios';
 
-function InsuranceSearchBar() {
+function SpecialitySearchBar() {
     const [searchTerm, setSearchTerm] = useState('');
     const [hoveredTerm, setHoveredTerm] = useState('');
     const [suggestions, setSuggestions] = useState({});
     const [showSuggestions, setShowSuggestions] = useState(false);
 
     useEffect(()=>{
-        getInsuranceSuggestions()
+        getSpecialitySuggestions()
             .then((response) => {
                 setSuggestions(response.data);
             })
             .catch((error) => {
-                console.error("Error fetching insurance suggestions:", error);
+                console.error("Error fetching speciality suggestions:", error);
             })
     },[]);
 
@@ -35,12 +34,13 @@ function InsuranceSearchBar() {
         setSearchTerm(e.target.value);
         setHoveredTerm('');
     };
+
   return (
-    <div className='p-3 flex grow items-center w-full lg:w-auto relative'>
-        <img src={insuarance} className='w-[20px]' alt='insurance card icon'/>
+    <div className='p-3 grow flex items-center w-full lg:w-auto relative'>
+        <i className='bi bi-search bold-icon'></i>
         <input 
-            className='p-2 rounded-md grow focus:outline-none' 
-            placeholder='Carrier insuarance and plan'
+            className='p-2 grow rounded-md focus:outline-none' 
+            placeholder='Condition, Procedure, Doctor ...'
             value={hoveredTerm || searchTerm}
             onChange={handleInputChange}
             onFocus={() => setShowSuggestions(true)}
@@ -52,16 +52,15 @@ function InsuranceSearchBar() {
                 style={{ zIndex: 1000 }}
                 onMouseLeave={handleMouseLeave}
             >
-
-            {suggestions["#"].length > 0 && (
+            {suggestions["Popular Specialities"].length > 0 && (
                 <div>
-                <div className='font-semibold p-2 text-grey'>#</div>
-                {suggestions["#"].map((suggestion, index) => (
+                <div className='font-semibold p-2 text-grey'>Popular Suggestions</div>
+                {suggestions["Popular Specialities"].map((suggestion, index) => (
                     <div
-                    key={index}
-                    className='p-2 hover:bg-gray-100 cursor-pointer hover:bg-light-rose'
-                    onMouseDown={() => handleSuggestionClick(suggestion)}
-                    onMouseOver={() => handleMouseOver(suggestion)}
+                        key={index}
+                        className='p-2 hover:bg-gray-100 cursor-pointer hover:bg-light-rose'
+                        onMouseDown={() => handleSuggestionClick(suggestion)}
+                        onMouseOver={() => handleMouseOver(suggestion)}
                     >
                     {suggestion}
                     </div>
@@ -69,26 +68,10 @@ function InsuranceSearchBar() {
                 </div>
             )}
 
-            {suggestions["A"].length > 0 && (
+            {suggestions["More specialities (a-z)"].length > 0 && (
                 <div>
-                <div className='font-semibold p-2 text-grey'>A</div>
-                {suggestions["A"].map((suggestion, index) => (
-                    <div
-                    key={index}
-                    className='p-2 hover:bg-gray-100 cursor-pointer hover:bg-light-rose'
-                    onMouseDown={() => handleSuggestionClick(suggestion)}
-                    onMouseOver={() => handleMouseOver(suggestion)}
-                    >
-                    {suggestion}
-                    </div>
-                ))}
-                </div>
-            )}
-
-            {suggestions["B"].length > 0 && (
-                <div>
-                <div className='font-semibold p-2 text-grey'>B</div>
-                {suggestions["B"].map((suggestion, index) => (
+                <div className='font-semibold p-2 text-grey'>More suggestions (a-z)</div>
+                {suggestions["More specialities (a-z)"].map((suggestion, index) => (
                     <div
                     key={index}
                     className='p-2 hover:bg-gray-100 cursor-pointer hover:bg-light-rose'
@@ -106,4 +89,4 @@ function InsuranceSearchBar() {
   )
 }
 
-export default InsuranceSearchBar
+export default SpecialitySearchBar

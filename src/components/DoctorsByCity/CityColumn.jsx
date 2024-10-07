@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Accordion from './Accordian';
+import Accordion from '../ReusableComponents/Accordian';
 
 const CityColumn = ({ cities, data }) => {
   return (
