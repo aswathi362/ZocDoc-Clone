@@ -17,7 +17,8 @@ export default {
       'white':'#fff',
       'white-gray':"#F9F8F7",
       'light-rose':'#FFE4E9',
-      'red':'#C5221F'
+      'red':'#C5221F',
+      'dark-grey':'#333'
     },
     extend: {},    
   },
